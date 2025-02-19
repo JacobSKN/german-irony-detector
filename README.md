@@ -26,12 +26,23 @@ The results using a 5-fold Cross Validation are the following:
 | Recall     | 0.9360  | 0.0274             |
 | F1-Score   | 0.9421  | 0.0274             |
 
+For the hold-out dataset (test.txt and test_labels.txt) the results are as follows:
+
+| Class        | Precision | Recall | F1-Score    |
+|:------------:|:---------:|:------:|:-----------:|
+| Not Ironic   | 0.6429    | 0.9000 | 0.7500      |
+| Ironic       | 0.8333    | 0.5000 | 0.6250      |
+
 ## Installation
 ```bash
 git clone https://github.com/yourusername/german-irony-detector.git
 cd german-irony-detector
 pip install -r requirements.txt
 ```
+
+## Further steps
+- Train on more samples
+- Including positive/negative irony as prediction
 
 ## Comments/Questions
 If you have comments or question, please send an email to jacob.schildknecht@zew.de
