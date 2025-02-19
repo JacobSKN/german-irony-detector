@@ -14,3 +14,7 @@ This project implements a machine learning model for detecting irony in German t
 git clone https://github.com/yourusername/german-irony-detector.git
 cd german-irony-detector
 pip install -r requirements.txt
+```
+
+## Comments/Questions
+If you have comments or question, please send an email to jacob.schildknecht@zew.de
