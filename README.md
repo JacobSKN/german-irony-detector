@@ -15,6 +15,17 @@ The data can be found in the data-folder. It consists of two files:
 - train.txt and train_labels.txt: The reduced training dataset by Schmidt and Harbusch (2023) consisting of 200 texts and labels.
 - test.txt and test_labels.txt: The reduced testing dataset by Schmidt and Harbusch (2023) consisting of 100 texts and labels.
 
+## Cross-Validation Results
+
+The results using a 5-fold Cross Validation are the following:
+
+| Metric     | Mean    | Standard Deviation |
+|:----------:|:-------:|:------------------:|
+| Accuracy   | 0.9405  | 0.0255             |
+| Precision  | 0.9490  | 0.0383             |
+| Recall     | 0.9360  | 0.0274             |
+| F1-Score   | 0.9421  | 0.0274             |
+
 ## Installation
 ```bash
 git clone https://github.com/yourusername/german-irony-detector.git
