@@ -1,7 +1,7 @@
 # German Irony Detector
 
 ## Overview
-This project implements a machine learning model for detecting irony in German text using fine-tuned BERT by Guhr et al. (2020) and the tuning procedure by Lüdke et al. (2021). The datasets used to fine-tune the model are from Schmidt and Harbusch (2023) and from Claude by Anthropic (2025).
+This project implements a machine learning model for detecting irony in German text using fine-tuned BERT by Guhr et al. (2020; https://github.com/oliverguhr/german-sentiment-lib) and the tuning procedure by Lüdke et al. (2021). The datasets used to fine-tune the model are from Schmidt and Harbusch (2023) and from Claude by Anthropic (2025).
 
 ## Features
 - BERT-based irony classification
