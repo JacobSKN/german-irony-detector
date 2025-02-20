@@ -26,7 +26,7 @@ The results using a 5-fold Cross Validation are the following:
 | Recall     | 0.9360  | 0.0274             |
 | F1-Score   | 0.9421  | 0.0274             |
 
-For the hold-out dataset (test.txt and test_labels.txt) the results are as follows:
+For the hold-out dataset by Schmidt and Harbusch (2023) (test.txt and test_labels.txt) the results are as follows:
 
 | Class        | Precision | Recall | F1-Score    |
 |:------------:|:---------:|:------:|:-----------:|
