@@ -40,6 +40,8 @@ cd german-irony-detector
 pip install -r requirements.txt
 ```
 
+The full model can be found on Huggingface: https://huggingface.co/JacobSKN/german-irony-detector
+
 ## Further steps
 - Train on more samples
 - Including positive/negative irony as prediction
