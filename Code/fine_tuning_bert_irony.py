@@ -69,7 +69,7 @@ class IronyDataset(torch.utils.data.Dataset):
             self,
             texts,
             labels,
-            max_length: int = 128
+            max_length: int = 256
     ):
         """
         Initialize the dataset with texts and labels.
@@ -260,7 +260,7 @@ def predict_batch(texts, model, tokenizer, device='cuda' if torch.cuda.is_availa
         texts,
         truncation=True,
         padding=True,
-        max_length=128,
+        max_length=256,
         return_tensors='pt'
     ).to(device)
     
@@ -385,8 +385,11 @@ def load_data(file_path='data/irony_dataset.csv'):
 def load_combined_data(news_articles_file, news_labels_file, irony_dataset_file='data/irony_dataset.csv'):
     """Load and combine both datasets with source tracking."""
     # Load original irony dataset
-    original_data = load_data()
+    original_data = load_data(irony_dataset_file)
     original_data['source'] = 'original'  # Add source column
+
+    subtle_irony_data = load_data('data/subtle_irony_dataset.csv')
+    subtle_irony_data['source'] = 'subtle_irony'  # Add source column
     
     # Load news articles
     with open(news_articles_file, 'r', encoding='utf-8') as f:
@@ -406,12 +409,17 @@ def load_combined_data(news_articles_file, news_labels_file, irony_dataset_file=
     # Combine datasets
     combined_data = pd.concat([
         original_data,
+        subtle_irony_data,
         news_data
     ], ignore_index=True)
     
     logger.info("Dataset sizes:")
     logger.info(f"Original irony dataset: {len(original_data)}")
+    logger.info(f"Structure of original irony dataset: {original_data.shape}")
+    logger.info(f"Subtle irony dataset: {len(subtle_irony_data)}")
+    logger.info(f"Structure of subtle irony dataset: {subtle_irony_data.shape}")
     logger.info(f"Irony articles: {len(news_data)}")
+    logger.info(f"Structure of irony articles: {news_data.shape}")
     logger.info(f"Combined dataset: {len(combined_data)}")
     
     return combined_data
@@ -609,7 +617,7 @@ def perform_kfold_cross_validation(data, n_splits=5):
             weight_decay=0.01,
             logging_dir='./logs',
             logging_steps=10,
-            evaluation_strategy="epoch",
+            eval_strategy="epoch",
             save_strategy="epoch",
             load_best_model_at_end=True,
             metric_for_best_model="loss"
@@ -758,7 +766,7 @@ def main(additional_dataset_files=None):
     trainer.train()
     
     # Save model and tokenizer
-    save_model_with_tokenizer(model, tokenizer, './irony-detector-combined')
+    save_model_with_tokenizer(model, tokenizer, './trained_model')
     # Evaluate separately
     evaluate_by_source(model, tokenizer, test_data)
 
