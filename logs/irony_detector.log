@@ -1,0 +1,149 @@
+2025-02-26 14:49:33,041 - __main__ - INFO - Trying to read file with latin1 encoding...
+2025-02-26 14:49:33,041 - __main__ - INFO - Successfully loaded 692 samples with latin1 encoding
+2025-02-26 14:49:33,041 - __main__ - INFO - Trying to read file with latin1 encoding...
+2025-02-26 14:49:33,041 - __main__ - INFO - Successfully loaded 141 samples with latin1 encoding
+2025-02-26 14:49:33,062 - __main__ - INFO - Dataset sizes:
+2025-02-26 14:49:33,063 - __main__ - INFO - Original irony dataset: 692
+2025-02-26 14:49:33,063 - __main__ - INFO - Structure of original irony dataset: (692, 3)
+2025-02-26 14:49:33,063 - __main__ - INFO - Subtle irony dataset: 141
+2025-02-26 14:49:33,064 - __main__ - INFO - Structure of subtle irony dataset: (141, 3)
+2025-02-26 14:49:33,064 - __main__ - INFO - Irony articles: 200
+2025-02-26 14:49:33,064 - __main__ - INFO - Structure of irony articles: (200, 3)
+2025-02-26 14:49:33,065 - __main__ - INFO - Combined dataset: 1033
+2025-02-26 14:49:33,065 - __main__ - INFO - 
+===== Loading Additional Dataset =====
+2025-02-26 14:49:33,069 - __main__ - INFO - Successfully read files with utf-8 encoding
+2025-02-26 14:49:33,070 - __main__ - INFO - 
+Additional dataset loaded:
+2025-02-26 14:49:33,070 - __main__ - INFO -   Number of samples: 100
+2025-02-26 14:49:33,070 - __main__ - INFO -   Ironic samples: 50
+2025-02-26 14:49:33,071 - __main__ - INFO -   Non-ironic samples: 50
+2025-02-26 14:49:33,071 - __main__ - INFO - 
+=== Performing 5-Fold Cross-Validation ===
+2025-02-26 14:49:33,073 - __main__ - INFO - 
+=== Fold 1 ===
+2025-02-26 15:27:40,557 - __main__ - INFO - Fold 1 Metrics:
+2025-02-26 15:27:40,562 - __main__ - INFO - Accuracy: 0.9952
+2025-02-26 15:27:40,562 - __main__ - INFO - Precision: 0.9914
+2025-02-26 15:27:40,564 - __main__ - INFO - Recall: 1.0000
+2025-02-26 15:27:40,564 - __main__ - INFO - F1 Score: 0.9957
+2025-02-26 15:27:40,570 - __main__ - INFO - 
+=== Fold 2 ===
+2025-02-26 17:12:13,037 - __main__ - INFO - Fold 2 Metrics:
+2025-02-26 17:12:13,052 - __main__ - INFO - Accuracy: 0.9614
+2025-02-26 17:12:13,052 - __main__ - INFO - Precision: 0.9722
+2025-02-26 17:12:13,052 - __main__ - INFO - Recall: 0.9545
+2025-02-26 17:12:13,052 - __main__ - INFO - F1 Score: 0.9633
+2025-02-26 17:12:13,052 - __main__ - INFO - 
+=== Fold 3 ===
+2025-02-26 17:42:52,285 - __main__ - INFO - Fold 3 Metrics:
+2025-02-26 17:42:52,285 - __main__ - INFO - Accuracy: 0.9565
+2025-02-26 17:42:52,285 - __main__ - INFO - Precision: 0.9545
+2025-02-26 17:42:52,285 - __main__ - INFO - Recall: 0.9633
+2025-02-26 17:42:52,285 - __main__ - INFO - F1 Score: 0.9589
+2025-02-26 17:42:52,285 - __main__ - INFO - 
+=== Fold 4 ===
+2025-02-26 18:14:16,478 - __main__ - INFO - Fold 4 Metrics:
+2025-02-26 18:14:16,480 - __main__ - INFO - Accuracy: 0.9612
+2025-02-26 18:14:16,480 - __main__ - INFO - Precision: 0.9737
+2025-02-26 18:14:16,480 - __main__ - INFO - Recall: 0.9569
+2025-02-26 18:14:16,480 - __main__ - INFO - F1 Score: 0.9652
+2025-02-26 18:14:16,482 - __main__ - INFO - 
+=== Fold 5 ===
+2025-02-26 18:49:16,683 - __main__ - INFO - Fold 5 Metrics:
+2025-02-26 18:49:16,685 - __main__ - INFO - Accuracy: 0.9515
+2025-02-26 18:49:16,685 - __main__ - INFO - Precision: 0.9739
+2025-02-26 18:49:16,685 - __main__ - INFO - Recall: 0.9412
+2025-02-26 18:49:16,685 - __main__ - INFO - F1 Score: 0.9573
+2025-02-26 18:49:16,696 - __main__ - INFO - 
+Cross-Validation Summary:
+2025-02-26 18:49:16,696 - __main__ - INFO - Accuracy:
+2025-02-26 18:49:16,696 - __main__ - INFO -   Mean: 0.9651
+2025-02-26 18:49:16,698 - __main__ - INFO -   Standard Deviation: 0.0154
+2025-02-26 18:49:16,699 - __main__ - INFO - Precision:
+2025-02-26 18:49:16,699 - __main__ - INFO -   Mean: 0.9731
+2025-02-26 18:49:16,699 - __main__ - INFO -   Standard Deviation: 0.0117
+2025-02-26 18:49:16,700 - __main__ - INFO - Recall:
+2025-02-26 18:49:16,700 - __main__ - INFO -   Mean: 0.9632
+2025-02-26 18:49:16,700 - __main__ - INFO -   Standard Deviation: 0.0198
+2025-02-26 18:49:16,700 - __main__ - INFO - F1_score:
+2025-02-26 18:49:16,701 - __main__ - INFO -   Mean: 0.9681
+2025-02-26 18:49:16,701 - __main__ - INFO -   Standard Deviation: 0.0141
+2025-02-26 18:49:16,795 - __main__ - INFO - 
+Split sizes:
+2025-02-26 18:49:16,796 - __main__ - INFO - Training set: 723
+2025-02-26 18:49:16,796 - __main__ - INFO - Validation set: 154
+2025-02-26 18:49:16,796 - __main__ - INFO - Test set: 156
+2025-02-26 18:49:18,078 - __main__ - INFO - 
+Starting training...
+2025-02-26 18:59:23,911 - __main__ - INFO - 
+Epoch 1.0 Metrics:
+2025-02-26 18:59:23,911 - __main__ - INFO - Accuracy: 0.8182
+2025-02-26 18:59:23,911 - __main__ - INFO - Precision: 0.7736
+2025-02-26 18:59:23,911 - __main__ - INFO - Recall: 0.9535
+2025-02-26 18:59:23,911 - __main__ - INFO - F1 Score: 0.8542
+2025-02-26 19:10:27,154 - __main__ - INFO - 
+Epoch 2.0 Metrics:
+2025-02-26 19:10:27,154 - __main__ - INFO - Accuracy: 0.9545
+2025-02-26 19:10:27,154 - __main__ - INFO - Precision: 1.0000
+2025-02-26 19:10:27,154 - __main__ - INFO - Recall: 0.9186
+2025-02-26 19:10:27,154 - __main__ - INFO - F1 Score: 0.9576
+2025-02-26 19:21:18,018 - __main__ - INFO - 
+Epoch 3.0 Metrics:
+2025-02-26 19:21:18,018 - __main__ - INFO - Accuracy: 0.9481
+2025-02-26 19:21:18,018 - __main__ - INFO - Precision: 0.9756
+2025-02-26 19:21:18,018 - __main__ - INFO - Recall: 0.9302
+2025-02-26 19:21:18,018 - __main__ - INFO - F1 Score: 0.9524
+2025-02-26 19:21:56,747 - __main__ - INFO - Model and tokenizer saved to ./trained_model
+2025-02-26 19:21:56,747 - __main__ - INFO - 
+=== Evaluation on Original Irony Dataset ===
+2025-02-26 19:21:56,747 - __main__ - INFO - Number of samples: 102
+2025-02-26 19:22:00,016 - __main__ - INFO - 
+Overall accuracy: 0.9216
+2025-02-26 19:22:00,016 - __main__ - INFO - 
+Confusion Matrix:
+2025-02-26 19:22:00,017 - __main__ - INFO -                   Predicted Not Ironic  Predicted Ironic
+2025-02-26 19:22:00,017 - __main__ - INFO - True Not Ironic              38                 2       
+2025-02-26 19:22:00,017 - __main__ - INFO - True Ironic                  6                  56      
+2025-02-26 19:22:00,018 - __main__ - INFO - 
+Classification Report:
+2025-02-26 19:22:00,018 - __main__ - INFO -               Precision    Recall  F1-Score
+2025-02-26 19:22:00,018 - __main__ - INFO - Not Ironic     0.8636      0.9500    0.9048
+2025-02-26 19:22:00,018 - __main__ - INFO - Ironic         0.9655      0.9032    0.9333
+2025-02-26 19:22:00,796 - __main__ - INFO - 
+=== Evaluation on Irony Articles ===
+2025-02-26 19:22:00,796 - __main__ - INFO - Number of samples: 26
+2025-02-26 19:22:06,641 - __main__ - INFO - 
+Overall accuracy: 1.0000
+2025-02-26 19:22:06,641 - __main__ - INFO - 
+Confusion Matrix:
+2025-02-26 19:22:06,641 - __main__ - INFO -                   Predicted Not Ironic  Predicted Ironic
+2025-02-26 19:22:06,641 - __main__ - INFO - True Not Ironic              13                 0       
+2025-02-26 19:22:06,643 - __main__ - INFO - True Ironic                  0                  13      
+2025-02-26 19:22:06,643 - __main__ - INFO - 
+Classification Report:
+2025-02-26 19:22:06,643 - __main__ - INFO -               Precision    Recall  F1-Score
+2025-02-26 19:22:06,643 - __main__ - INFO - Not Ironic     1.0000      1.0000    1.0000
+2025-02-26 19:22:06,643 - __main__ - INFO - Ironic         1.0000      1.0000    1.0000
+2025-02-26 19:22:06,901 - __main__ - INFO - 
+===== Evaluation on Additional Dataset =====
+2025-02-26 19:22:06,901 - __main__ - INFO - Number of samples: 100
+2025-02-26 19:22:06,904 - __main__ - INFO - 
+=== Evaluation on Original Irony Dataset ===
+2025-02-26 19:22:06,904 - __main__ - INFO - Number of samples: 0
+2025-02-26 19:22:06,908 - __main__ - INFO - IndexError: One of the classes is missing in the test set
+2025-02-26 19:22:06,908 - __main__ - INFO - 
+=== Evaluation on Irony Articles ===
+2025-02-26 19:22:06,908 - __main__ - INFO - Number of samples: 100
+2025-02-26 19:22:28,354 - __main__ - INFO - 
+Overall accuracy: 0.8600
+2025-02-26 19:22:28,354 - __main__ - INFO - 
+Confusion Matrix:
+2025-02-26 19:22:28,354 - __main__ - INFO -                   Predicted Not Ironic  Predicted Ironic
+2025-02-26 19:22:28,354 - __main__ - INFO - True Not Ironic              48                 2       
+2025-02-26 19:22:28,354 - __main__ - INFO - True Ironic                  12                 38      
+2025-02-26 19:22:28,354 - __main__ - INFO - 
+Classification Report:
+2025-02-26 19:22:28,354 - __main__ - INFO -               Precision    Recall  F1-Score
+2025-02-26 19:22:28,354 - __main__ - INFO - Not Ironic     0.8000      0.9600    0.8727
+2025-02-26 19:22:28,354 - __main__ - INFO - Ironic         0.9500      0.7600    0.8444
