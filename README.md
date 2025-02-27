@@ -10,8 +10,9 @@ This project implements a machine learning model for detecting irony in German t
 - Customizable training pipeline
 
 ## Data
-The data can be found in the data-folder. It consists of two files:
+The data can be found in the data-folder. It consists of four files:
 - irony_dataset.csv: Including the texts and labels from Claude (completely artifically generated)
+- subtle_irony_dataset.csv: Including texts using subtle irony and labels from Claude (completely artifically generated)
 - train.txt and train_labels.txt: The reduced training dataset by Schmidt and Harbusch (2023) consisting of 200 texts and labels.
 - test.txt and test_labels.txt: The reduced testing dataset by Schmidt and Harbusch (2023) consisting of 100 texts and labels.
 
@@ -21,17 +22,17 @@ The results using a 5-fold Cross Validation are the following:
 
 | Metric     | Mean    | Standard Deviation |
 |:----------:|:-------:|:------------------:|
-| Accuracy   | 0.9405  | 0.0255             |
-| Precision  | 0.9490  | 0.0383             |
-| Recall     | 0.9360  | 0.0274             |
-| F1-Score   | 0.9421  | 0.0274             |
+| Accuracy   | 0.9651  | 0.0154             |
+| Precision  | 0.9731  | 0.0117             |
+| Recall     | 0.9632  | 0.0198             |
+| F1-Score   | 0.9681  | 0.0141             |
 
 For the hold-out dataset by Schmidt and Harbusch (2023) (test.txt and test_labels.txt) the results are as follows:
 
 | Class        | Precision | Recall | F1-Score    |
 |:------------:|:---------:|:------:|:-----------:|
-| Not Ironic   | 0.6429    | 0.9000 | 0.7500      |
-| Ironic       | 0.8333    | 0.5000 | 0.6250      |
+| Not Ironic   | 0.8000    | 0.9600 | 0.8727      |
+| Ironic       | 0.9500    | 0.7600 | 0.8444      |
 
 ## Installation
 ```bash
